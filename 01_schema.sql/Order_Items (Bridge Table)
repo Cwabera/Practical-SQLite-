@@ -1,0 +1,8 @@
+CREATE TABLE Order_Items (
+    id INTEGER PRIMARY KEY,
+    AUTOINCREMENT,
+    order_id INTEGER,
+    book_id INTEGER,
+    FOREIGN KEY (order_id) REFERENCES Orders(id),
+    FOREIGN KEY (book_id) REFERENCES Books(id) 
+);

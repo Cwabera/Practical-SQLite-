@@ -1,0 +1,4 @@
+SELECT Books.title FROM Books,
+JOIN Order_Items ON Books.id = Order_Items.book_id,
+JOIN Orders ON Order_Items.order_id = Orders.id,
+JOIN Customers ON Orders.customer_id = Customers.id WHERE Customers.name = 'Alice Johnson'; 

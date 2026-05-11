@@ -1,0 +1,5 @@
+INSERT INTO Customers (name) VALUES ('Alice Johnson'),
+('Bob Smith'),
+('Charlie Davis'),
+('Diana Evans'),
+('Ethan Brown');

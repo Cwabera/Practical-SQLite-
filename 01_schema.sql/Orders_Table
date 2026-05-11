@@ -1,0 +1,7 @@
+CREATE TABLE Orders(
+    id INTEGER PRIMARY KEY,
+    AUTOINCREMENT,
+    customer_id INTEGER,
+    order_date DATE DEFAULT CURRENT_DATE,
+    FOREIGN KEY (customer_id) REFERENCES Customers(id)
+    );
